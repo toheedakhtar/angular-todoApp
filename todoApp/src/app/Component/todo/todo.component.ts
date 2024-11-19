@@ -13,22 +13,44 @@ import { TodoAddComponent } from '../todo-add/todo-add.component';
 })
 export class TodoComponent {
   todos: Todo[];
-  localItem: string;
+  localItem: any;
+
   constructor(@Inject(DOCUMENT) private document: Document) {
     const localStorage = document.defaultView?.localStorage;
 
     if (localStorage) {
-
       this.localItem = localStorage.getItem("todos")
 
+
       if (this.localItem == null) {
-        this.todos = []
+        this.todos = [
+          {
+            sno: 1,
+            title: "Do 100 pushups",
+            desc: "To do 100 pushups in day. Can be done in sets of 10",
+            active: true
+          },
+          {
+            sno: 2,
+            title: "Drink 7 lts of Water",
+            desc: "Made sure to Get 7 ltr of Water in a day. Dont drink more than 1.5 ltr in an hour",
+            active: false
+          },
+          {
+            sno: 3,
+            title: "Grind LeetCode",
+            desc: "Do at least 2 easy LeetCode or 1 medium LeetCode problem",
+            active: false
+          }
+        ]
       }
       else {
         this.todos = JSON.parse(this.localItem)
       }
     }
   }
+
+
 
   delTodo(todo: Todo) {
     console.log(todo)

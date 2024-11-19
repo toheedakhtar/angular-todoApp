@@ -1,12 +1,12 @@
 <div class="container">
     <h3>Add a New TuDu</h3>
-    <form (ngSubmit)="onSubmit()" class="todo-form">
+    <form (ngSubmit)="onSubmit()" class="todo-form" #todoForm="ngForm">
         <label for="todo-title">TuDu Title</label>
         <input type="text" id="title" name="title" placeholder="Enter title" [(ngModel)]="title" required>
 
         <label for="todo-desc">Description</label>
         <textarea id="desc" name="desc" placeholder="Enter description" [(ngModel)]="desc" required></textarea>
 
-        <button type="submit" class="submit-btn">Add TuDu</button>
+        <button type="submit" class="submit-btn" [disabled]="!todoForm.form.valid">Add TuDu</button>
     </form>
 </div>
