@@ -1,4 +1,9 @@
 <main>
+
+    <div class="todo-add">
+        <app-todo-add (todoAdd)="addTodo($event)"></app-todo-add>
+    </div>
+
     <div class="todo-list">
         @for (todo of todos; track todo.title){
         <app-todo-item [todo]="todo" (todoDel)="delTodo($event)"></app-todo-item>
@@ -9,6 +14,6 @@
     </div>
 </main>
 
-<footer>
+<!-- <footer>
     <p>This is footer area</p>
-</footer>
+</footer> -->

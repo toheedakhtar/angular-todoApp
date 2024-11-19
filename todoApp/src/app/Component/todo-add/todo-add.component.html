@@ -1,0 +1,12 @@
+<div class="container">
+    <h3>Add a New To-Do</h3>
+    <form (ngSubmit)="onSubmit()" class="todo-form">
+        <label for="todo-title">To-Do Title</label>
+        <input type="text" id="title" name="title" placeholder="Enter title" [(ngModel)]="title" required>
+
+        <label for="todo-desc">Description</label>
+        <textarea id="desc" name="desc" placeholder="Enter description" [(ngModel)]="desc" required></textarea>
+
+        <button type="submit" class="submit-btn">Add To-Do</button>
+    </form>
+</div>

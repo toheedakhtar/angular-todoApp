@@ -1,0 +1,74 @@
+.container {
+
+    background-color: #000000;
+    color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* max-width: 400px; */
+    text-align: center;
+}
+
+/* Form Header */
+h3 {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label Styling */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #666;
+}
+
+/* Input Styling */
+input[type="text"],
+textarea {
+    padding: 10px;
+    border: 0.5px solid #1f1f1f;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #00f3a2;
+}
+
+/* Textarea Styling */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button Styling */
+.submit-btn {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #00f3a2;
+}
+
+.submit-btn:active {
+    background-color: #00f3a2;
+}

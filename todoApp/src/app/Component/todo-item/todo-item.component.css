@@ -1,7 +1,16 @@
 .todo-item {
-    padding: 2vh 2vw;
-    margin: 5px;
-    border: 1px solid white;
+    height: 25vh;
+    width: 15vw;
+    padding: 1vh 1vw;
+    margin: 10px;
+    border: 1px solid #666;
+    border-radius: 5px;
+
+}
+
+.todo-item>h5,
+p {
+    color: #666;
 }
 
 .del-btn {
