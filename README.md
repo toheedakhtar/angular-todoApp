@@ -1,4 +1,4 @@
-# angular-todoApp
+# Tudu - a simple todo app
 Todo list app made in Angular
 
 # Preview Video
