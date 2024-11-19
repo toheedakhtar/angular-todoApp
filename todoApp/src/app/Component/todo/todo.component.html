@@ -1,9 +1,12 @@
 <main>
-    @for (todo of todos; track todo.title){
-    <li>{{todo.title}} - {{todo.desc}}</li>
-    } @empty {
-    <p>No tasks.</p>
-    }
+    <div class="todo-list">
+        @for (todo of todos; track todo.title){
+        <app-todo-item [todo]="todo" (todoDel)="delTodo($event)"></app-todo-item>
+        }
+        @empty {
+        <p>No tasks.</p>
+        }
+    </div>
 </main>
 
 <footer>

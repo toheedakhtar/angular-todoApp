@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Todo } from '../../Todo';
+import { TodoItemComponent } from '../todo-item/todo-item.component';
 
 @Component({
   selector: 'app-todo',
   standalone: true,
-  imports: [],
+  imports: [TodoItemComponent],
   templateUrl: './todo.component.html',
   styleUrl: './todo.component.css'
 })
@@ -33,6 +34,12 @@ export class TodoComponent {
       }
 
     ]
+  }
+
+  delTodo(todo: Todo) {
+    console.log(todo)
+    const index = this.todos.indexOf(todo);
+    this.todos.splice(index, 1)
   }
 
 }

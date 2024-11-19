@@ -1,0 +1,13 @@
+.todo-item {
+    padding: 2vh 2vw;
+    margin: 5px;
+    border: 1px solid white;
+}
+
+.del-btn {
+    background-color: red;
+    color: white;
+    padding: 1vh 1vw;
+    border: none;
+    border-radius: 3px;
+}
