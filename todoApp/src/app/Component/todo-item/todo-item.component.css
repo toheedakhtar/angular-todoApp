@@ -1,22 +1,136 @@
 .todo-item {
-    height: 25vh;
-    width: 15vw;
-    padding: 1vh 1vw;
-    margin: 10px;
-    border: 1px solid #666;
-    border-radius: 5px;
-
+    width: 100%;
+    max-width: 300px;
+    /* Limit max width for larger screens */
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2f2f2f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-overflow: ellipsis;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.todo-item>h5,
-p {
-    color: #666;
+.todo-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.todo-content {
+    flex-grow: 1;
+}
+
+.todo-item h3 {
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+    transition: color 0.3s ease;
+}
+
+.todo-item p {
+    color: #818181;
+    font-size: 1rem;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: #b0b0b0;
+}
+
+/* Actions Section (Checkbox + Delete Button) */
+.todo-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.todo-actions input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.todo-actions label {
+    color: #f1f1f1;
+    font-size: 0.9rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Delete Button */
 .del-btn {
-    background-color: red;
+    background-color: #e74c3c;
     color: white;
-    padding: 1vh 1vw;
+    padding: 6px 12px;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.del-btn:hover {
+    background-color: #c0392b;
+}
+
+.del-btn:active {
+    background-color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .todo-item {
+        max-width: 90%;
+        /* Make the card more fluid on smaller screens */
+        padding: 15px;
+    }
+
+    .todo-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .todo-item p {
+        font-size: 0.95rem;
+    }
+
+    .todo-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .todo-actions input[type="checkbox"] {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .todo-actions label {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .todo-item {
+        max-width: 100%;
+        padding: 12px;
+    }
+
+    .todo-item h3 {
+        font-size: 1rem;
+    }
+
+    .todo-item p {
+        font-size: 0.9rem;
+    }
+
+    .todo-actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .del-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
 }

@@ -6,10 +6,10 @@
 
     <div class="todo-list">
         @for (todo of todos; track todo.title){
-        <app-todo-item [todo]="todo" (todoDel)="delTodo($event)"></app-todo-item>
+        <app-todo-item [todo]="todo" (todoDel)="delTodo($event)" (todoCheckBox)="toggleTodo($event)"></app-todo-item>
         }
         @empty {
-        <p>No tasks.</p>
+        <p>No tudus yet.</p>
         }
     </div>
 </main>

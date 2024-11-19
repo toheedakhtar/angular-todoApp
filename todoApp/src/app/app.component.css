@@ -3,4 +3,12 @@ h1 {
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: background 1s ease;
+}
+
+h1:hover {
+    text-align: center;
+    background: -webkit-linear-gradient(#eee, #00ff88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
