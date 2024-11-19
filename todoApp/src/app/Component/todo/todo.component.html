@@ -1,0 +1,11 @@
+<main>
+    @for (todo of todos; track todo.title){
+    <li>{{todo.title}} - {{todo.desc}}</li>
+    } @empty {
+    <p>No tasks.</p>
+    }
+</main>
+
+<footer>
+    <p>This is footer area</p>
+</footer>
