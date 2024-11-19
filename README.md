@@ -3,4 +3,5 @@ Todo list app made in Angular
 
 # Preview Screenshot
 
-![preview video](tudu.mp4)
+https://github.com/user-attachments/assets/4d7b019e-60af-473e-9169-6129bf5a269c
+
