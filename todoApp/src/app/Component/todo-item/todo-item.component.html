@@ -1,7 +1,7 @@
 <div class="todo-item">
     <div class="todo-content">
         <h3 [ngClass]="{'strike':!todo.active}">{{todo.title}}</h3>
-        <p>{{todo.desc}}</p>
+        <p [ngClass]="{'strike':!todo.active}">{{todo.desc}}</p>
     </div>
     <div class="todo-actions">
         <input type="checkbox" (click)="onCheckBoxClick(todo)" [checked]="!todo.active">
