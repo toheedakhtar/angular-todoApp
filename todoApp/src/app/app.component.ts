@@ -11,4 +11,8 @@ import { TodoComponent } from './Component/todo/todo.component';
 })
 export class AppComponent {
   title = 'todoApp';
+
+  titleRedirect() {
+    window.location.href = 'https:/bit.ly/toheeed'
+  }
 }
