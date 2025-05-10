@@ -1,14 +1,4 @@
-h1 {
-    text-align: center;
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: background 2s ease;
-}
-
-h1:hover {
-    text-align: center;
-    background: -webkit-linear-gradient(#eee, #00ff88);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.delete-button {
+    background-color: green; /* Change this from red to green */
+    color: white; /* Keep text color white for visibility */
 }
