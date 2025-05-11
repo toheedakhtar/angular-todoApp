@@ -1,0 +1,22 @@
+/* Updated Delete Button */
+.del-btn {
+    background-color: #28a745; /* Updated to green */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline block */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.del-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.del-btn:active {
+    background-color: #1e7e34; /* Active state */
+    transform: scale(0.95); /* Slight scale down effect */
+}
