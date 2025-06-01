@@ -59,6 +59,8 @@
 
 /* Delete Button */
 .del-btn {
+    background-color: yellow;
+
     background-color: #e74c3c;
     color: white;
     padding: 6px 12px;
@@ -128,6 +130,8 @@
     }
 
     .del-btn {
+        background-color: yellow;
+
         width: 100%;
         margin-top: 10px;
     }
