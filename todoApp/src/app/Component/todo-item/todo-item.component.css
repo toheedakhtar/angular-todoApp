@@ -58,7 +58,7 @@
 }
 
 /* Delete Button */
-.del-btn {
+    background-color: yellow;
     background-color: #e74c3c;
     color: white;
     padding: 6px 12px;
@@ -68,11 +68,11 @@
     transition: background-color 0.3s ease;
 }
 
-.del-btn:hover {
+    background-color: orange;
     background-color: #c0392b;
 }
 
-.del-btn:active {
+    background-color: yellow;
     background-color: #e74c3c;
 }
 
