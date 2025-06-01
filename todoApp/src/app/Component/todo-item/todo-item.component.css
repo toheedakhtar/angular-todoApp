@@ -7,7 +7,7 @@
     background-color: #181818;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
-    flex-direction: column;
+color: yellow;
     justify-content: space-between;
     text-overflow: ellipsis;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
