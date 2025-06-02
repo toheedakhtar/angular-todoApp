@@ -59,7 +59,7 @@
 
 /* Delete Button */
 .del-btn {
-    background-color: #e74c3c;
+background-color: #ff0000;
     color: white;
     padding: 6px 12px;
     border: none;
@@ -69,11 +69,11 @@
 }
 
 .del-btn:hover {
-    background-color: #c0392b;
+background-color: #c70000;
 }
 
 .del-btn:active {
-    background-color: #e74c3c;
+background-color: #900000;
 }
 
 /* Responsive Design */
