@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: space-between;
     text-overflow: ellipsis;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+background: violet;
 }
 
 .todo-item:hover {
