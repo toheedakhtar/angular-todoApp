@@ -1,4 +1,4 @@
-# Tudu - a simple todo app
+# changed - a simple todo app
 Todo list app made in Angular
 
 # Preview Video
